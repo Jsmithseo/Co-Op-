@@ -1,0 +1,12 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<jeremy.smith@pantheon.io>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.24.62",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
