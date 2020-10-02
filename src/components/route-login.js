@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const RouteLogin = () => (
+const RouteLogin = ({ showModal }) => (
     <>
       <h1>Login in or Sign up</h1>
-      <button>Log in</button>
+      <button onClick={showModal}>Log in</button>
     </>
 );
 
-export default RouteLogin
+export default RouteLogin 
