@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import Profile from "../components/profile";
 import RouteBase from "../components/route-base";
 import RouteSecret from "../components/route-secret";
-import RouteLogin from "../components/route-login";
+import IdentityLogin from "../components/identity-login";
 
 import 'react-netlify-identity-widget/styles.css';
 
@@ -28,7 +28,7 @@ const showModal = () => setVisibility(true);
       <Router>
         <RouteBase path="/dashboard/base" />
         <RouteSecret path="/dashboard/secret" />
-        <RouteLogin path="/dashboard/login" showModal={ showModal } />
+        <IdentityLogin path="/dashboard/login" showModal={ showModal } />
       </Router>
       <IdentityModal 
       showDialog={isVisible} onCloseDialog={ () => setVisibility(false) } />

@@ -18,6 +18,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
       },
+ 
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://marin-city-co-op.netlify.app` // required!
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
