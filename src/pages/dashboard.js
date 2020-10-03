@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import Profile from "../components/profile";
 import PrivateRoute from "../components/private-route";
 import RouteBase from "../components/route-base";
-import RouteSecret from "../components/route-secret";
+import RouteSecret from "../components/identity-login";
 import IdentityLogin from "../components/identity-login";
 
 import 'react-netlify-identity-widget/styles.css';
