@@ -4,7 +4,7 @@ import { IdentityContextProvider } from "react-netlify-identity-widget";
 import "./layout.css"
 
 const Layout = ({ children }) => (
-  <IdentityContextProvider url="http://google.com">
+  <IdentityContextProvider url="https://marin-city-co-op.netlify.com/">
     <header>
       <Link to="/">Co Op App</Link>
     </header>
