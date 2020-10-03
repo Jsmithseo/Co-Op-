@@ -1,5 +1,5 @@
 import React from "react"
 
-const RouteBase = () => <h1>All your base belongs to use</h1>
+const RouteBase = () => <h1> This will show forms </h1>
 
 export default RouteBase
