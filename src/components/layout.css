@@ -90,3 +90,8 @@ h1 {
   display: block;
   height: 100%;
 }
+
+
+.userStatus {
+  display: flex;
+}

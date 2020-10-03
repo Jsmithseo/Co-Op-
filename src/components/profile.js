@@ -26,7 +26,7 @@ const Profile = ({ showModal }) => {
           See your base
         </Link>
       </nav>
-      <span> Logged in as {name} <div class="status-page-link">
+      <span className="userStatus"> Logged in as {name} <div class="status-page-link">
       <div class="status-dot"></div>
     </div> <button onClick={showModal}>Log out</button></span>
     </div>
