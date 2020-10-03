@@ -11,7 +11,7 @@ const Profile = ({ showModal }) => {
     identity && 
     identity.user &&
     identity.user.user_metadata &&
-    identity.user.user_metadata.full_name;
+    identity.user.user_metadata.name;
 
 
 
@@ -26,7 +26,7 @@ const Profile = ({ showModal }) => {
           See your base
         </Link>
       </nav>
-      <span> Logged in as { name }. <button onClick={showModal}>Log out</button></span>
+      <span> Logged in as {name}. <button onClick={showModal}>Log out</button></span>
     </div>
     )
   )
