@@ -11,7 +11,7 @@ const Profile = ({ showModal }) => {
     identity && 
     identity.user &&
     identity.user.user_metadata &&
-    identity.user.user_metadata.name;
+    identity.user.user_metadata.full_name;
 
 
 

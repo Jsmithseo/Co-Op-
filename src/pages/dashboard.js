@@ -4,6 +4,7 @@ import { Router } from "@reach/router"
 import  IdentityModal from 'react-netlify-identity-widget';
 import Layout from "../components/layout";
 import Profile from "../components/profile";
+import PrivateRoute from "../components/private-route";
 import RouteBase from "../components/route-base";
 import RouteSecret from "../components/route-secret";
 import IdentityLogin from "../components/identity-login";
@@ -26,8 +27,12 @@ const showModal = () => setVisibility(true);
     <Layout>
       <Profile showModal={ showModal } />
       <Router>
-        <RouteBase path="/dashboard/base" />
-        <RouteSecret path="/dashboard/secret" />
+        <PrivateRoute path="/dashboard/base"
+            component={RouteBase}
+        />
+        <PrivateRoute path="/dashboard/secret" 
+        component={RouteSecret}
+        />
         <IdentityLogin path="/dashboard/login" showModal={ showModal } />
       </Router>
       <IdentityModal 
