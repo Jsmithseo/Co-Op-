@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useIdentityContext } from 'react-netlify-identity';
-
+import './layout.css'
 const Profile = ({ showModal }) => {
   const identity = useIdentityContext();
 
@@ -26,7 +26,9 @@ const Profile = ({ showModal }) => {
           See your base
         </Link>
       </nav>
-      <span> Logged in as {name}. <button onClick={showModal}>Log out</button></span>
+      <span> Logged in as {name} <div class="status-page-link">
+      <div class="status-dot"></div>
+    </div> <button onClick={showModal}>Log out</button></span>
     </div>
     )
   )
